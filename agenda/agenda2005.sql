@@ -27,6 +27,8 @@ use agendaguedes;
 -- char(255) ->tipo de dados String (sem variação)
 -- (255) -> máximo de caracteres
 -- not null (obrigatório o preenchimento
+--  timestamp default current_timestamp (data e hora automatica)
+--  date (tipo de dados relacionados a data YYYYMMDD)
 
 create table contatos (
 	id int primary key auto_increment,
