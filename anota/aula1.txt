@@ -1,0 +1,14 @@
+Introdução ao banco de dados
+
+Material de apoio:
+https://github.com/professorjosedeassis/mysql
+
+Aula 1:
+https://github.com/professorjosedeassis/mysql/tree/master/aula1
+
+Atividades:
+- Instalar o servidor de banco de dados (máquina virtual)
+- Criar um repositório GitHub de nome mysql
+- Fazer upload do script da aula no repositório
+- Inserir na planilha o seu nome e o link do repositório
+

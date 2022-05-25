@@ -1,0 +1,31 @@
+GIT
+
+https://git-scm.com/
+
+Configurações iniciais >>>>>>>>>>>>>>>>>>>>>>>>
+git config --global user.name "Se nome"
+git config --global user.email "seu e-mail"
+
+git config user.name
+git config user.email
+git config core.editor (verificar se existe um editor de código associado)
+
+Comandos:
+clear -> limpar a tela
+ls -> listar conteúdo
+pwd -> exibir local
+
+Clonando um repositório (GitHub) >>>>>>>>>>>>>>
+Abrir um terminal (Git Bash) em documentos
+git clone link_de_clonagem
+
+Sincronizando o projeto local com o GitHub >>>>
+git status (verificar mudanças)
+git add . (adiciona as mudanção no repositório local)
+git commit -m "alterações no arquivo lojinha.sql"
+git push (sincronizar as alterações locais com o GitHub)
+
+Sincronizando alterações do GitHub no projeto local >>>>
+git pull
+
+Dica: https://joseassis.com.br/cursos/gitegithub.html

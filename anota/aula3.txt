@@ -1,0 +1,12 @@
+CRUD
+
+https://github.com/professorjosedeassis/mysql/tree/master/aula3
+
+Atividade 2 (avaliação) - CRUD
+
+- Na lojinha (tabela produtos) inserir 6 produtos relacionados
+  ao projeto.
+- Selecionar todos produtos em ordem alfabética
+- Escolher um produto e alterar o valor
+- Excluir o último produto da tabela
+- Encaminhar a atividade(script do projeto) ao GitHub

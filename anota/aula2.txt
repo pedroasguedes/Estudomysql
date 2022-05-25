@@ -1,0 +1,28 @@
+Desenvolvimento de um sistema com uso de banco de dados:
+Projeto 1: Simples agenda de contatos
+
+Passo 1: Entender as necessidades do projeto (o que será armazenado no banco)
+
+- nome do contato (obrigatório)
+- telefone do contato (obrigatório)
+- e-mail (não obrigatório)
+
+Passo 2: Modelagem de dados
+https://github.com/professorjosedeassis/mysql/tree/master/aula2
+
+Passo 3: Criar o script do banco de dados (sql)
+
+Atividade de avaliação
+
+1) Criar um banco de dados de nome lojinha(seunome)
+2) Criar uma tabela de nome produtos
+   - nome do produto
+   - estoque (quantidade)
+   - valor
+3) Fazer a modelagem dos dados
+4) Criar o script do projeto
+5) Criar uma pasta de nome lojinha e copiar nesta pasta:
+   - arquivo de modelagem .png (draw.io)
+   - script .sql
+   - arquivo de documentação (workbench) .pdf
+6) Enviar a pasta para o GitHub

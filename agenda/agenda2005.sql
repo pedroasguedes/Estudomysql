@@ -29,6 +29,40 @@ use agendaguedes;
 -- not null (obrigatório o preenchimento
 --  timestamp default current_timestamp (data e hora automatica)
 --  date (tipo de dados relacionados a data YYYYMMDD)
+/****************************************************************************
+-- 25/05
+
+-- sum() função de soma do banco de dados
+select sum(estoque * custo) as total from produtos;
+
+-- relatorio de reposição de estoque1
+select * from produtos where estoque < estoquemin;
+
+-- relatorio de reposição de estoque 2
+select codigo as código,
+     produto,
+     date_format(dataval,'%d/%m/%Y') as data_validade,
+     estoque,
+     estoquemin as estoque_mínimo
+     from produtos where estoque < estoquemin;
+     
+-- date_format() função usada para formatar a data
+%d/%m/%y dd/mm/aa | %d/%m/%Y dd/mm/aaaa
+-- relatório de validade de produtos
+ select codigo as código,
+     produto,
+     date_format(dataval,'%d/%m/%Y') as data_validade
+from produtos;
+
+-- relatório de validade de produto2
+ select codigo as código,
+     produto,
+     date_format(dataval,'%d/%m/%Y') as data_validade,
+datediff(dataval,curdate()) as dias_restantes
+from produtos;
+
+
+/*****************************************************************************/
 
 create table contatos (
 	id int primary key auto_increment,
