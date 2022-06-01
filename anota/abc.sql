@@ -1,7 +1,7 @@
 /**
 	Lojinhacerto
 	@author Pedro Guedes
-	@version 1.0
+	@version teste
 */
 
 
@@ -94,5 +94,42 @@ complemento varchar(255),
 cidade varchar(255),
 uf char(2)
 );
+insert into  cliente(nome,fone,cpf,email,marketing)
+ values ('Marcos Vinicius Lucas Filipe Viana','(12) 3737-3469','103.061.809-79','marcosviniciusviana@mixfmmanaus.com.br','Sim');  
 
+select * from cliente;
 
+-- foreign key(FK) Chave estrangeira que cria o relacionamento
+-- do tipo 1-N com a tabela clientes
+-- FK(pedidos)______________PK(clientes)
+-- Observação: Usar o mesmo nome e tipo de dados nas chaves (PK e FK)
+
+create table pedidos (
+pedido int primary key auto_increment,
+dataped timestamp default current_timestamp,
+total decimal(10,2),
+idcli int not null,
+foreign key (idcli) references cliente(idcli)
+);
+
+-- aberturas de pedidos
+insert into pedidos(idcli) values(1);
+
+-- verificar pedidos
+select * from pedidos where pedido = 1;
+
+-- verificar pedidos junto com o nome do clientes
+-- inner join (unir informações de 2 ou mais tabelas)
+-- 
+select * from pedidos inner join cliente
+on pedidos.idcli = cliente.idcli;
+
+-- verificar pedidos junto com o nome do cliente (relatório simplificado)
+-- %H:%i exibir também o horario formatado
+select
+pedidos.pedido,
+date_format(pedidos.dataped, '%d%m%Y - %H:%i') as data_ped,
+cliente.nome as cliente,
+cliente.fone
+from pedidos inner join cliente
+on pedidos.idcli = cliente.idcli;
